@@ -14,12 +14,14 @@ _Note: because JavaScript is [bad at decimal math](http://adripofjavascript.com/
 makeChange({ price: 100, amountGiven: 100 })
 // => { quarters: 0, dimes: 0, nickels: 0, pennies: 0 }
 
-makeChange({ price: 159, amountGiven: 200 })
-// => { quarters: 1, dimes: 1, nickels: 1, pennies: 1 }
 
 makeChange({ price: 432, amountGiven: 500 })
 // => { quarters: 2, dimes: 1, nickels: 1, pennies: 3 }
 ```
+if (difference > 25),
+then (difference / 25)
+else if (difference )
+
 
 #### fizzBuzz
 
