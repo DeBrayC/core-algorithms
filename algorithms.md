@@ -14,12 +14,14 @@ _Note: because JavaScript is [bad at decimal math](http://adripofjavascript.com/
 makeChange({ price: 100, amountGiven: 100 })
 // => { quarters: 0, dimes: 0, nickels: 0, pennies: 0 }
 
-makeChange({ price: 159, amountGiven: 200 })
-// => { quarters: 1, dimes: 1, nickels: 1, pennies: 1 }
 
 makeChange({ price: 432, amountGiven: 500 })
 // => { quarters: 2, dimes: 1, nickels: 1, pennies: 3 }
 ```
+if (difference > 25),
+then (difference / 25)
+else if (difference )
+
 
 #### fizzBuzz
 
@@ -71,7 +73,7 @@ fibonacci(10)
 // => [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 ```
 
-#### collatzConjecture
+<!-- #### collatzConjecture
 
 Return the Collatz sequence for a given number.
 
@@ -84,137 +86,137 @@ collatzConjecture(1)
 // => [1]
 
 collatzConjecture(7)
-// => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
-```
+// => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1] -->
 
 
-## Set Operations
-
-#### setUnion
-
-Return the union of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setUnion(a, b)
-// => [1, 2, 3, 4, 6, 8]
-```
-
-#### setIntersection
-
-Return the intersection of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setIntersection(a, b)
-// => [2, 4]
-```
-
-#### setCompliment
-
-Return the compliment of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setCompliment(a, b)
-// => [6, 8]
-```
-
-#### setSymmetricDifference
-
-Return the symmetric difference of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setSymmetricDifference(a, b)
-// => [1, 3, 6, 8]
-```
-
-
-## Sorting and Searching
-
-#### mergeSort
-
-Sort an array of numbers using the **merge sort** algorithm.
-
-```javascript
-mergeSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
-// => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-```
-
-#### bubbleSort
-
-Sort an array of numbers using the **bubble sort** algorithm.
-
-```javascript
-bubbleSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
-// => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-```
-
-#### binarySearch
-
-Search for a number within an array using the **binary search** algorithm.
-
-```javascript
-const numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-binarySearch(numbers, 45)
-// => 8
-```
-
-
-## Graphing and Geometry
-
-#### closestPair
-
-Given a set of points on a 2-dimensional plane, return the pair of points with the least distance between them.
-
-Reference: [Wikipedia](https://en.wikipedia.org/wiki/Closest_pair_of_points_problem)
-
-```javascript
-const points = [
-  [2,1],
-  [4,0],
-  [-1,0],
-  [5,3],
-  [-2,5],
-  [3,-3],
-  [-2,0],
-  [3,4],
-  [5,-4],
-  [0,-2]
-]
-closestPair(points)
-// => { pair: [[-1, 0], [-2, 0]], distance: 1 }
-```
-
-#### isConnectedGraph
-
-Check if a graph is connected or disconnected. Return `true` or `false`.
-
-A graph is connected when there is a path between every pair of vertices.
-
-Reference: [Wikipedia](https://en.wikipedia.org/wiki/Connectivity_(graph_theory))
-
-```javascript
-const graphA = {
-  'a': ['b', 'c'],
-  'b': ['a', 'd'],
-  'c': ['a', 'd'],
-  'd': ['b', 'c'],
-}
-isConnectedGraph(graphA)
-// => true
-
-const graphB = {
-  'a': ['b'],
-  'b': ['a'],
-  'c': ['d'],
-  'd': ['c'],
-}
-isConnectedGraph(graphB)
-// => false
-```
+//
+// <!-- ## Set Operations
+//
+// #### setUnion
+//
+// Return the union of two sets.
+//
+// ```javascript
+// const a = [1, 2, 3, 4]
+// const b = [2, 4, 6, 8]
+// setUnion(a, b)
+// // => [1, 2, 3, 4, 6, 8]
+// ```
+//
+// #### setIntersection
+//
+// Return the intersection of two sets.
+//
+// ```javascript
+// const a = [1, 2, 3, 4]
+// const b = [2, 4, 6, 8]
+// setIntersection(a, b)
+// // => [2, 4]
+// ```
+//
+// #### setCompliment
+//
+// Return the compliment of two sets.
+//
+// ```javascript
+// const a = [1, 2, 3, 4]
+// const b = [2, 4, 6, 8]
+// setCompliment(a, b)
+// // => [6, 8]
+// ```
+//
+// #### setSymmetricDifference
+//
+// Return the symmetric difference of two sets.
+//
+// ```javascript
+// const a = [1, 2, 3, 4]
+// const b = [2, 4, 6, 8]
+// setSymmetricDifference(a, b)
+// // => [1, 3, 6, 8]
+// ```
+//
+//
+// ## Sorting and Searching
+//
+// #### mergeSort
+//
+// Sort an array of numbers using the **merge sort** algorithm.
+//
+// ```javascript
+// mergeSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
+// // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// ```
+//
+// #### bubbleSort
+//
+// Sort an array of numbers using the **bubble sort** algorithm.
+//
+// ```javascript
+// bubbleSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
+// // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// ```
+//
+// #### binarySearch
+//
+// Search for a number within an array using the **binary search** algorithm.
+//
+// ```javascript
+// const numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+// binarySearch(numbers, 45)
+// // => 8
+// ```
+//
+//
+// ## Graphing and Geometry
+//
+// #### closestPair
+//
+// Given a set of points on a 2-dimensional plane, return the pair of points with the least distance between them.
+//
+// Reference: [Wikipedia](https://en.wikipedia.org/wiki/Closest_pair_of_points_problem)
+//
+// ```javascript
+// const points = [
+//   [2,1],
+//   [4,0],
+//   [-1,0],
+//   [5,3],
+//   [-2,5],
+//   [3,-3],
+//   [-2,0],
+//   [3,4],
+//   [5,-4],
+//   [0,-2]
+// ]
+// closestPair(points)
+// // => { pair: [[-1, 0], [-2, 0]], distance: 1 }
+// ```
+//
+// #### isConnectedGraph
+//
+// Check if a graph is connected or disconnected. Return `true` or `false`.
+//
+// A graph is connected when there is a path between every pair of vertices.
+//
+// Reference: [Wikipedia](https://en.wikipedia.org/wiki/Connectivity_(graph_theory))
+//
+// ```javascript
+// const graphA = {
+//   'a': ['b', 'c'],
+//   'b': ['a', 'd'],
+//   'c': ['a', 'd'],
+//   'd': ['b', 'c'],
+// }
+// isConnectedGraph(graphA)
+// // => true
+//
+// const graphB = {
+//   'a': ['b'],
+//   'b': ['a'],
+//   'c': ['d'],
+//   'd': ['c'],
+// }
+// isConnectedGraph(graphB)
+// // => false
+// ``` -->
