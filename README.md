@@ -12,5 +12,3 @@ Navigate to repo in terminal and install Node Package Manager using command: $ n
 Run tests using command: $ npm test
 
 ## Usage and Examples
-
-collatzConjecture will return the 

@@ -73,7 +73,7 @@ fibonacci(10)
 // => [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 ```
 
-#### collatzConjecture
+<!-- #### collatzConjecture
 
 Return the Collatz sequence for a given number.
 
@@ -86,7 +86,7 @@ collatzConjecture(1)
 // => [1]
 
 collatzConjecture(7)
-// => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
+// => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1] -->
 
 
 //
